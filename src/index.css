@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Olive brand palette */
+    --background: 60 30% 96%;
+    --foreground: 80 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 80 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 80 25% 12%;
+
+    --primary: 90 35% 18%;
+    --primary-foreground: 60 30% 96%;
+
+    --secondary: 80 20% 92%;
+    --secondary-foreground: 90 35% 18%;
+
+    --muted: 70 15% 90%;
+    --muted-foreground: 90 10% 35%;
+
+    --accent: 85 40% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 80 15% 85%;
+    --input: 80 15% 85%;
+    --ring: 90 35% 18%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --hero-bg: 75 30% 93%;
+    --score-red: 0 75% 55%;
+    --score-green: 130 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Fraunces', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+}
